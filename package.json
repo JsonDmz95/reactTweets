@@ -2,10 +2,8 @@
   "name": "makeschoool-challenge",
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2",
+    "babel-runtime": "^6.26.0",
     "http-server": "^0.11.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "twitter-proxy": "^2.0.0"
   },
   "scripts": {
@@ -14,7 +12,9 @@
   "description": "Install the project dependencies:",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-plugin-emotion": "^10.0.33"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jlmatus/front-end-test.git"

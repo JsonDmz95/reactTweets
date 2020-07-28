@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  #split {
+    // background: red;
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  #root {
+    flex-direction: row;
+
+    #split{
+      // display: flex;
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800&display=swap");
+body {
+  background-color: #000;
+  font-family: "Inter", times, "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #17bf63;
+  font-weight: bold;
+  line-height: 1.3;
+  text-transform: none;
+}
+
+h1, .internals-titles {
+  text-transform: uppercase;
+}
+
+p {
+  color: #fff;
+  line-height: 1.3;
+  word-wrap: break-word;
+}
+
+a {
+  color: #17bf63;
+  line-height: 1.3;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover, a:active, a:focus {
+  color: #17bf63;
+  text-decoration: underline;
+}
+
+::selection {
+  background: #17bf63;
+  color: #fff;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.full-wd {
+  width: 100%;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.visible-full-hd {
+  display: none !important;
+}
+
+.featured-jobs {
+  padding-bottom: 50px;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+img {
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.aligned-text {
+  text-align: center;
+}
+
+ul.aligned-list {
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+:lang(en-US) body .hidden-en {
+  display: none;
+}
+
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .featured-jobs {
+    padding-bottom: 100px;
+  }
+  .aligned-text {
+    text-align: left;
+  }
+  ul.aligned-list {
+    padding-left: 40px;
+    list-style: disc;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hidden-full-hd {
+    background: none !important;
+    height: auto !important;
+  }
+  .visible-full-hd {
+    display: block !important;
+  }
+}
+
+@keyframes animationRight {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+header {
+  background-color: #0c0c0c;
+  padding: 15px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .brand-icon {
+  font-size: 30px;
+  display: inline-block;
+}
+
+header nav .add-btn {
+  appearance: none;
+  font-size: 20px;
+  color: #fff;
+  background: #17bf63;
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+}
+
+@media (min-width: 768px) {
+  header nav {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+}
+
+.primary-button, .btn-default, .btn-general {
+  background-color: #17bf63;
+  color: #fff;
+  padding: 8.5px 15px;
+  border: none;
+  border-radius: 0px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.primary-button:hover, .primary-button:active, .primary-button:focus, .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-general:hover, .btn-general:active, .btn-general:focus {
+  color: #fff;
+  background-color: #14a254;
+  text-decoration: none;
+}
+
+.primary-button.active.focus, .primary-button.active:focus, .primary-button.active:hover, .primary-button:active.focus, .primary-button:active:focus, .primary-button:active:hover, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .btn-general.active.focus, .btn-general.active:focus, .btn-general.active:hover, .btn-general:active.focus, .btn-general:active:focus, .btn-general:active:hover {
+  background-color: #17bf63;
+  color: #fff;
+  padding: 8.5px 15px;
+  border: none;
+  border-radius: 0px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.primary-button.active.focus:hover, .primary-button.active.focus:active, .primary-button.active.focus:focus, .primary-button.active:focus:hover, .primary-button.active:focus:active, .primary-button.active:focus:focus, .primary-button.active:hover:hover, .primary-button.active:hover:active, .primary-button.active:hover:focus, .primary-button:active.focus:hover, .primary-button:active.focus:active, .primary-button:active.focus:focus, .primary-button:active:focus:hover, .primary-button:active:focus:active, .primary-button:active:focus:focus, .primary-button:active:hover:hover, .primary-button:active:hover:active, .primary-button:active:hover:focus, .btn-default.active.focus:hover, .btn-default.active.focus:active, .btn-default.active.focus:focus, .btn-default.active:focus:hover, .btn-default.active:focus:active, .btn-default.active:focus:focus, .btn-default.active:hover:hover, .btn-default.active:hover:active, .btn-default.active:hover:focus, .btn-default:active.focus:hover, .btn-default:active.focus:active, .btn-default:active.focus:focus, .btn-default:active:focus:hover, .btn-default:active:focus:active, .btn-default:active:focus:focus, .btn-default:active:hover:hover, .btn-default:active:hover:active, .btn-default:active:hover:focus, .btn-general.active.focus:hover, .btn-general.active.focus:active, .btn-general.active.focus:focus, .btn-general.active:focus:hover, .btn-general.active:focus:active, .btn-general.active:focus:focus, .btn-general.active:hover:hover, .btn-general.active:hover:active, .btn-general.active:hover:focus, .btn-general:active.focus:hover, .btn-general:active.focus:active, .btn-general:active.focus:focus, .btn-general:active:focus:hover, .btn-general:active:focus:active, .btn-general:active:focus:focus, .btn-general:active:hover:hover, .btn-general:active:hover:active, .btn-general:active:hover:focus {
+  color: #fff;
+  background-color: #14a254;
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#root #split {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #root {
+    flex-direction: row;
+  }
+  #root #split {
+    flex-direction: row;
+  }
+}
+/*# sourceMappingURL=main.css.map */
