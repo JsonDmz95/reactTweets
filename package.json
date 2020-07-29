@@ -2,6 +2,7 @@
   "name": "makeschoool-challenge",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "babel-runtime": "^6.26.0",
     "http-server": "^0.11.1",
     "twitter-proxy": "^2.0.0"

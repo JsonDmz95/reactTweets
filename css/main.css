@@ -37,8 +37,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #17bf63;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 ::selection {
@@ -46,104 +45,24 @@ a:hover, a:active, a:focus {
   color: #fff;
 }
 
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table;
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.text-white {
-  color: #fff;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
 }
 
-.full-wd {
-  width: 100%;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  transition: background ease 0.3s;
 }
 
-.no-margin {
-  margin: 0px;
-}
-
-.no-padding {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.visible-full-hd {
-  display: none !important;
-}
-
-.featured-jobs {
-  padding-bottom: 50px;
-}
-
-.no-break {
-  white-space: nowrap;
-}
-
-img {
-  margin: 0 auto;
-}
-
-video {
-  width: 100%;
-  display: block;
-}
-
-.aligned-text {
-  text-align: center;
-}
-
-ul.aligned-list {
-  padding: 0px;
-  list-style: none;
-  text-align: center;
-}
-
-:lang(en-US) body .hidden-en {
-  display: none;
-}
-
-@media (min-width: 576px) and (max-width: 767.9px) {
-  .container {
-    max-width: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .featured-jobs {
-    padding-bottom: 100px;
-  }
-  .aligned-text {
-    text-align: left;
-  }
-  ul.aligned-list {
-    padding-left: 40px;
-    list-style: disc;
-    text-align: left;
-  }
-}
-
-@media (min-width: 1920px) {
-  .hidden-full-hd {
-    background: none !important;
-    height: auto !important;
-  }
-  .visible-full-hd {
-    display: block !important;
-  }
-}
-
-@keyframes animationRight {
-  from {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(6px);
-  }
-  to {
-    transform: translateX(0);
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
 }
 
 header {
@@ -241,7 +160,6 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
 }
 
 #root #split {
@@ -254,6 +172,7 @@ body {
 @media (min-width: 768px) {
   #root {
     flex-direction: row;
+    overflow: hidden;
   }
   #root #split {
     flex-direction: row;

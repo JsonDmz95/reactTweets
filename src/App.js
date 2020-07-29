@@ -10,10 +10,29 @@ const App = () => {
   //   userName: "",
   //   count: 30
   // });
+  const [usersList, updateList] = useState([
+    {
+      index: 1,
+      userName: "VersaAgency",
+      count: "30"
+    },
+    {
+      index: 2,
+      userName: "RainAgency",
+      count: "30"
+    },
+    {
+      index: 3,
+      userName: "alexadevs",
+      count: "30"
+    }
+  ]);
   return (
     <Fragment>
       <Header />
-      <Split />
+      <Split 
+        usersList={usersList}
+      />
     </Fragment>
   );
 }
